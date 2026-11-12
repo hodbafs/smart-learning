@@ -1477,11 +1477,11 @@
                     <!-- Podcast Hero Header Card -->
                     <div class="rounded-3xl bg-slate-900 text-white p-6 sm:p-8 shadow-xl relative overflow-hidden">
                         
-                        <div class="relative z-10 flex flex-col md:flex-row items-center md:items-start gap-6">
-                            <!-- Podcast Artwork -->
-                            <div class="relative shrink-0 group">
-                                <div class="w-36 h-36 sm:w-44 sm:h-44 rounded-3xl overflow-hidden shadow-2xl border-2 border-white/20 relative bg-slate-950">
-                                    <img id="podcast-cover-img" src="Cover/06_Servant_Leadership.png" alt="Podcast Cover" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="relative z-10 flex flex-col md:flex-row items-center md:items-center gap-6">
+                            <!-- Podcast Artwork (16:9 Widescreen Frame matching official Cover PNGs) -->
+                            <div class="relative shrink-0 group w-full max-w-[300px] sm:max-w-[320px] md:w-72 lg:w-80">
+                                <div class="w-full aspect-video rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20 relative bg-slate-950">
+                                    <img id="podcast-cover-img" src="Cover/06_Servant_Leadership.png" alt="Podcast Cover" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300">
                                 </div>
                             </div>
 
@@ -3004,8 +3004,8 @@
             
             <!-- Left: Artwork & Episode Info -->
             <div onclick="expandToFullPodcast()" class="flex items-center gap-3 min-w-0 flex-1 cursor-pointer group">
-                <div class="relative w-11 h-11 sm:w-12 sm:h-12 rounded-xl overflow-hidden shadow-md shrink-0 border border-white/20 bg-slate-950">
-                    <img id="mini-podcast-cover" src="Cover/06_Servant_Leadership.png" alt="Podcast Thumb" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+                <div class="relative w-16 sm:w-20 aspect-video rounded-xl overflow-hidden shadow-md shrink-0 border border-white/20 bg-slate-950">
+                    <img id="mini-podcast-cover" src="Cover/06_Servant_Leadership.png" alt="Podcast Thumb" class="w-full h-full object-contain group-hover:scale-105 transition-transform">
                     <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
                         <svg class="w-4 h-4 text-white stroke-current" fill="none" viewBox="0 0 24 24" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"/>
